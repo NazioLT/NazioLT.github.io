@@ -1,0 +1,219 @@
+:root {
+    --mainColor: #f3efe1;
+    --secondColor: #dd4f4f;
+    --thirdColor: rgb(56, 56, 56);
+
+    --IndexXSize: 10%;
+    --Spacing: 2%;
+    --HeaderYSize: 800px;
+    --BannerYSize: 300px;
+}
+
+@font-face {
+    font-family: MAINFONT;
+    src: url("Fonts/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: MAINFONT-Thin;
+    src: url("Fonts/RobotoMono-ExtraLight.ttf");
+}
+
+.ALL {
+    width: 100%;
+    font-family: MAINFONT-Thin;
+}
+
+header {
+    color: white;
+    background-color: var(--thirdColor);
+    font-family: MAINFONT;
+    position: relative;
+    box-shadow: 0px -5px 25px 10px black;
+
+    height: var(--HeaderYSize);
+}
+
+.HeadBanner img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    max-height: var(--HeaderYSize);
+    opacity: 0.7;
+}
+
+.HeadBanner h1 {
+    position: absolute;
+    width: 100%;
+    top: 250px;
+    left: auto;
+
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--mainColor);
+}
+
+.HeadBanner p {
+    position: absolute;
+    text-align: center;
+
+    width: 100%;
+    top: 350px;
+    left: auto;
+
+    font-size: 42px;
+}
+
+.HEAD {
+    background-color: rgba(56, 56, 56, 0);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    z-index: 900;
+}
+
+.HEAD h1 {
+    position: absolute;
+    left: var(--Spacing);
+    z-index: 999;
+
+    margin-top: 10px;
+}
+
+.HEAD ul {
+    list-style-type: none;
+    position: relative;
+    font-family: MAINFONT;
+
+    margin: 5px var(--Spacing);
+}
+
+.HEAD li {
+    float: right;
+}
+
+.HEAD li a {
+    display: block;
+    color: var(--mainColor);
+
+    border: 1px solid var(--mainColor);
+    text-align: right;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px 0px 0px 25px;
+}
+
+.HEAD li a:hover {
+    color: var(--thirdColor);
+    background-color: var(--mainColor);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--thirdColor);
+    background-color: var(--mainColor);
+}
+
+.MainBody {
+    text-align: center;
+    width: 100%;
+}
+
+.MainBody ul {
+    list-style-type: none;
+    justify-content: center;
+    position: relative;
+    font-family: MAINFONT;
+    left: 33%;
+    right: 33%;
+    size: 33%;
+
+    /* margin: 5px var(--Spacing); */
+}
+
+.MainBody ul li {
+    float:left;
+}
+
+.MainBody ul li a {
+    display: block;
+    color: var(--secondColor);
+
+    border: 1px solid var(--secondColor);
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    
+    /* padding: 10px; */
+    text-decoration: none;
+    margin: 10px 0px 0px 05px;
+}
+
+p {
+    margin-top: 10px;
+    font-family: MAINFONT;
+    margin-bottom: 75px;
+}
+
+.RedButton {
+    position: relative;
+    color: var(--secondColor);
+    padding: 10px 100px;
+    margin-top: 50px;
+    border: 3px solid var(--secondColor);
+
+    font-family: MAINFONT;
+    font-size: 20px;
+}
+
+.RedButton:hover {
+    color: var(--mainColor);
+    background-color: var(--secondColor);
+}
+
+.MainBody .RedButton
+{
+    position: relative;
+}
+
+.Banner {
+    color: white;
+    background-color: var(--thirdColor);
+    font-family: MAINFONT;
+    position: relative;
+    box-shadow: 0px 10px 25px 0px black;
+    margin: 100px 0px;
+
+    height: var(--BannerYSize);
+}
+
+.Banner img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    left: 0px;
+    max-height: var(--BannerYSize);
+    opacity: 0.7;
+}
+
+.Banner h1 {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: auto;
+
+    z-index: 999;
+
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--mainColor);
+}
+
+body h2 {
+    color: var(--secondColor);
+    padding: 25px;
+    font-family: MAINFONT;
+    font-size: 42px;
+}
