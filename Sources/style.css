@@ -176,3 +176,8 @@ footer .wrapperBot ul .break
     width: 90%;
     margin: 0 auto;
 }
+
+.NonBold
+{
+    font-family: MAINFONT;
+}
