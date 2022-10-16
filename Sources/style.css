@@ -3,11 +3,9 @@
     --secondColor: #dd4f4f;
     --thirdColor: rgb(56, 56, 56);
 
-    --IndexXSize: 10%;
-    --Spacing: 2%;
-    --HeaderYSize: 100px;
-    --BannerYSize: 300px;
-    --HeaderButtonWidth: 100px;
+    --HeaderYSize: 75px;
+    --MainBannerYSize: 500px;
+    --BannerYSize: 75px;
 }
 
 @font-face {
@@ -44,13 +42,13 @@ header
     width: 100%;
     height: var(--HeaderYSize);
 
-    background-color: var(--thirdColor);
+    background-color: rgba(56, 56, 56, 0);
     position: fixed;
 }
 
 header h1
 {
-    width: 50%;
+    width: 200px;
     float: left;
     text-align: left;
 
@@ -86,6 +84,24 @@ nav a:hover
     font-weight: 0;
 
     font-family: MAINFONT-Bold;
+}
+
+.MainBanner 
+{
+    background-image: url("IMG/headerBack.png");
+    background-size: cover;
+    background-position: center center;
+
+    height: var(--MainBannerYSize);
+}
+
+.MainBanner h1
+{
+    line-height: var(--MainBannerYSize);
+
+    color: var(--mainColor);
+    text-shadow: 4px 4px 7px rgba(31, 31, 31, 0.44);
+    text-align: center;
 }
 
 body
