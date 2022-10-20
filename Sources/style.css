@@ -5,8 +5,8 @@
 
     --HeaderYSize: 75px;
     --FooterYSize: 150px;
-    --MainBannerYSize: 500px;
-    --BannerYSize: 75px;
+    --MainBannerYSize: 800px;
+    --BannerYSize: 500px;
 }
 
 @font-face {
@@ -24,22 +24,23 @@
     src: url("Fonts/RobotoMono-Bold.ttf");
 }
 
-*
-{
+* {
     margin: 0;
     padding: 0;
 
     font-family: MAINFONT-Bold;
 }
 
-.wrapper
-{
+h1 {
+    font-size: 36px;
+}
+
+.wrapper {
     width: 95%;
     margin: 0 auto;
 }
 
-header
-{
+header {
     width: 100%;
     height: var(--HeaderYSize);
 
@@ -47,8 +48,7 @@ header
     position: fixed;
 }
 
-header h1
-{
+header h1 {
     width: 200px;
     float: left;
     text-align: left;
@@ -56,16 +56,15 @@ header h1
     color: var(--mainColor);
 
     line-height: var(--HeaderYSize);
+    font-size: xx-large;
 }
 
-nav
-{
+nav {
     float: right;
     line-height: var(--HeaderYSize);
 }
 
-nav a
-{
+nav a {
     text-decoration: none;
     font-size: 18px;
 
@@ -78,66 +77,96 @@ nav a
     margin: 0 1px;
 }
 
-nav a:hover
-{
+nav a:hover {
     background-color: var(--mainColor);
     color: var(--thirdColor);
     font-weight: 0;
 }
 
-.MainBanner 
-{
-    background-image: url("IMG/headerBack.png");
+.Banner {
     background-size: cover;
     background-position: center center;
     box-shadow: 0px 2px 6px 2px #232323;
-
-    height: var(--MainBannerYSize);
 }
 
-.MainBanner h1
-{
-    line-height: var(--MainBannerYSize);
-
+.Banner h1 {
     color: var(--mainColor);
     text-shadow: 4px 4px 7px rgba(31, 31, 31, 0.44);
     text-align: center;
 }
 
-body
-{
+.MainBanner {
+    background-image: url("IMG/headerBack.png");
+    height: var(--MainBannerYSize);
+
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 2px 6px 2px #232323;
+}
+
+.MainBanner h1 {
+    line-height: var(--MainBannerYSize);
+}
+
+.BannerProjects h1 {
+    line-height: var(--BannerYSize);
+}
+
+.BannerProjects {
+    background-image: url("IMG/Screen3.png");
+    height: var(--BannerYSize);
+
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 2px 6px 2px #232323;
+}
+
+body {
     color: var(--secondColor);
     background-color: var(--mainColor);
 }
 
-body .CategoryContent
-{
+body .CategoryContent {
     text-align: justify;
-    margin: 50px 0px;
+    margin: 150px 0px;
 
     padding: 0 5%;
 }
 
-body .CategoryContent h1
-{
+body .CategoryContent h1 {
     text-align: center;
-    margin: 50px;
+    margin: 75px;
 }
 
-body .CategoryContent P
+body .CategoryContent .AboutText
+{
+    display: inline-block;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body .CategoryContent .AboutText div
 {
     width: 45%;
+    padding: 0;
 }
 
-footer
+body .CategoryContent .AboutText div img
 {
+    height: 300px;
+    width: 300px;
+    background-color: #232323;
+}
+
+footer {
     background-color: var(--secondColor);
     color: var(--mainColor);
     height: var(--FooterYSize);
 }
 
-footer h2
-{
+footer h2 {
     text-align: center;
     white-space: nowrap;
     width: 100%;
@@ -145,8 +174,7 @@ footer h2
     line-height: 75px;
 }
 
-footer .wrapperBot ul
-{
+footer .wrapperBot ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -154,30 +182,30 @@ footer .wrapperBot ul
     text-align: justify;
 }
 
-footer .wrapperBot ul li
-{
+footer .wrapperBot ul li {
     display: inline-block;
 }
 
-footer .wrapperBot ul li img
-{
+footer .wrapperBot ul li img {
     width: 50px;
     height: 50px;
 }
 
-footer .wrapperBot ul .break
-{
+footer .wrapperBot ul .break {
     width: 100%;
     height: 0;
 }
 
-.wrapperBot
-{
+.wrapperBot {
     width: 90%;
     margin: 0 auto;
 }
 
-.NonBold
-{
+.wrapperContent {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.NonBold {
     font-family: MAINFONT;
 }

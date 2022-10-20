@@ -4,6 +4,6 @@ function Button() {
 }
 
 window.addEventListener('scroll', () => {
-    let y = (1 + (window.scrollY || window.pageYOffset)) / 400
+    let y = (1 + (window.scrollY || window.pageYOffset)) / 750
     document.getElementById('Header').style.backgroundColor = `rgba(${56}, ${56}, ${56}, ${y})`;
 })
