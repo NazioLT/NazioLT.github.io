@@ -138,8 +138,7 @@ body .CategoryContent h1 {
     margin: 75px;
 }
 
-body .CategoryContent .AboutText
-{
+body .CategoryContent .AboutText {
     display: inline-block;
 
     display: flex;
@@ -147,17 +146,30 @@ body .CategoryContent .AboutText
     justify-content: space-around;
 }
 
-body .CategoryContent .AboutText div
-{
+body .CategoryContent .AboutText div {
     width: 45%;
     padding: 0;
+    background-color: aqua;
 }
 
-body .CategoryContent .AboutText div img
-{
-    height: 300px;
-    width: 300px;
+body .CategoryContent .AboutText div img {
+    width: 100%;
+    background-size: cover;
     background-color: #232323;
+}
+
+body .CategoryContent .AboutText div a {
+    text-decoration: none;
+    color: var(--secondColor);
+    border: 2px solid var(--secondColor);
+
+    width: 100%;
+}
+
+body .CategoryContent .AboutText div a:hover {
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    font-weight: 0;
 }
 
 footer {
