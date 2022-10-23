@@ -1,223 +1,147 @@
-:root {
-    --mainColor: #f3efe1;
-    --secondColor: #dd4f4f;
-    --thirdColor: rgb(56, 56, 56);
-
-    --HeaderYSize: 75px;
-    --FooterYSize: 150px;
-    --MainBannerYSize: 800px;
-    --BannerYSize: 500px;
-}
-
 @font-face {
     font-family: MAINFONT;
     src: url("Fonts/RobotoMono-Regular.ttf");
 }
 
-@font-face {
-    font-family: MAINFONT-Thin;
-    src: url("Fonts/RobotoMono-ExtraLight.ttf");
-}
-
-@font-face {
-    font-family: MAINFONT-Bold;
-    src: url("Fonts/RobotoMono-Bold.ttf");
+:root {
+    --mainColor: #f3efe1;
+    --mainVariantColor: #dbd5bd;
+    --secondColor: #dd6060;
+    --secondVariantColor: #cf2e2e;
+    --thirdColor: rgb(56, 56, 56);
+    --thirdVariantColor: rgb(27, 27, 27);
 }
 
 * {
     margin: 0;
     padding: 0;
 
-    font-family: MAINFONT-Bold;
+    font-family: MAINFONT;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 36px;
+span {
+    color: var(--secondVariantColor);
 }
 
-.wrapper {
-    width: 95%;
-    margin: 0 auto;
-}
-
-header {
+.hero {
     width: 100%;
-    height: var(--HeaderYSize);
-
-    background-color: rgba(56, 56, 56, 0);
-    position: fixed;
-}
-
-header h1 {
-    width: 200px;
-    float: left;
-    text-align: left;
-
-    color: var(--mainColor);
-
-    line-height: var(--HeaderYSize);
-    font-size: xx-large;
+    height: 100vh;
+    background-image: url("IMG/Banner.png") ;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 10px;
 }
 
 nav {
-    float: right;
-    line-height: var(--HeaderYSize);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-nav a {
-    text-decoration: none;
-    font-size: 18px;
-
+.logo {
     color: var(--mainColor);
-
-    border: 2px solid var(--mainColor);
-
-    width: 100px;
-    padding: 10px 20px;
-    margin: 0 1px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 
-nav a:hover {
-    background-color: var(--mainColor);
-    color: var(--thirdColor);
-    font-weight: 0;
-}
-
-.Banner {
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 0px 2px 6px 2px #232323;
-}
-
-.Banner h1 {
-    color: var(--mainColor);
-    text-shadow: 4px 4px 7px rgba(31, 31, 31, 0.44);
-    text-align: center;
-}
-
-.MainBanner {
-    background-image: url("IMG/headerBack.png");
-    height: var(--MainBannerYSize);
-
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 0px 2px 6px 2px #232323;
-}
-
-.MainBanner h1 {
-    line-height: var(--MainBannerYSize);
-}
-
-.BannerProjects h1 {
-    line-height: var(--BannerYSize);
-}
-
-.BannerProjects {
-    background-image: url("IMG/Screen3.png");
-    height: var(--BannerYSize);
-
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 0px 2px 6px 2px #232323;
-}
-
-body {
-    color: var(--secondColor);
-    background-color: var(--mainColor);
-}
-
-body .CategoryContent {
-    text-align: justify;
-    margin: 150px 0px;
-
-    padding: 0 5%;
-}
-
-body .CategoryContent h1 {
-    text-align: center;
-    margin: 75px;
-}
-
-body .CategoryContent .AboutText {
+nav ul li {
+    list-style-type: none;
     display: inline-block;
+    padding: 10px 25px;
+}
 
+nav ul li a {
+    color: var(--mainColor);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border: 2px solid var(--mainColor);
+}
+
+nav ul li a:hover {
+    color: var(--thirdColor);
+    background-color: var(--mainColor);
+    transition: 0.4s;
+}
+
+.content {
+    position: absolute;
+    left: 8%;
+
+    /* Vrmt centrer au milieu de l'ecran */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: var(--mainColor);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3 {
+    color: var(--mainColor);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: var(--secondVariantColor);
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: var(--mainColor);
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+    border-radius: 20%;
+    /* filter: grayscale(); */
+}
+.about-text {
+    width: 530px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-body .CategoryContent .AboutText div {
-    width: 45%;
-    padding: 0;
-    background-color: aqua;
-}
-
-body .CategoryContent .AboutText div img {
-    width: 100%;
-    background-size: cover;
-    background-color: #232323;
-}
-
-body .CategoryContent .AboutText div a {
-    text-decoration: none;
-    color: var(--secondColor);
-    border: 2px solid var(--secondColor);
-
-    width: 100%;
-}
-
-body .CategoryContent .AboutText div a:hover {
-    background-color: var(--secondColor);
-    color: var(--mainColor);
-    font-weight: 0;
-}
-
-footer {
-    background-color: var(--secondColor);
-    color: var(--mainColor);
-    height: var(--FooterYSize);
-}
-
-footer h2 {
+.about h2 {
+    color: var(--thirdColor);
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom:  48px;
     text-align: center;
-    white-space: nowrap;
-    width: 100%;
-
-    line-height: 75px;
 }
 
-footer .wrapperBot ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-    text-align: justify;
+.about-text h5 {
+    color: var(--thirdColor);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
 }
 
-footer .wrapperBot ul li {
-    display: inline-block;
-}
-
-footer .wrapperBot ul li img {
-    width: 50px;
-    height: 50px;
-}
-
-footer .wrapperBot ul .break {
-    width: 100%;
-    height: 0;
-}
-
-.wrapperBot {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.wrapperContent {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.NonBold {
-    font-family: MAINFONT;
+.about-text p {
+    color: var(--thirdColor);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 14px;
+    margin-bottom: 48px;
 }
