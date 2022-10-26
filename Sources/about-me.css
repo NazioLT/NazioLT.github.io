@@ -12,19 +12,25 @@
     --thirdVariantColor: rgb(27, 27, 27);
 }
 
+body
+{
+    background-color: var(--mainColor);
+}
+
 .timeline {
     width: 1050px;
     max-width: 95%;
+    height: 450px;
     margin: 0 auto;
     align-items: center;
 
     margin-bottom: 100px;
 }
 
-.timeline h1
+.timeline h2
 {
     color: var(--thirdVariantColor);
-    text-align: center;
+    font-size: 48px;
 }
 
 .timeline-object {
@@ -55,7 +61,7 @@
 }
 
 .timeline-object:not(.complete) .timeline-status {
-    background: var(--mainColor);
+    background: var(--mainVariantColor);
     border: 4px solid var(--secondVariantColor);
 }
 
@@ -73,4 +79,17 @@
 .timeline-content h3 {
     color: #cf2e2e;
     margin-bottom: 10px;
+}
+
+.journey h1
+{
+    text-align: center;
+    color: var(--thirdVariantColor);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.journey
+{
+    background-color: var(--mainVariantColor);
 }
