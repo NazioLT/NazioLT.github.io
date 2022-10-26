@@ -1,0 +1,76 @@
+@font-face {
+    font-family: MAINFONT;
+    src: url("Fonts/RobotoMono-Regular.ttf");
+}
+
+:root {
+    --mainColor: #f3efe1;
+    --mainVariantColor: #dbd5bd;
+    --secondColor: #dd6060;
+    --secondVariantColor: #cf2e2e;
+    --thirdColor: rgb(56, 56, 56);
+    --thirdVariantColor: rgb(27, 27, 27);
+}
+
+.timeline {
+    width: 1050px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+.timeline h1
+{
+    color: var(--thirdVariantColor);
+    text-align: center;
+}
+
+.timeline-object {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.timeline-object.complete::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    width: 4px;
+    height: 100px;
+    background-color: var(--secondVariantColor);
+    left: 23px;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-status {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    background-color: var(--secondVariantColor);
+}
+
+.timeline-object:not(.complete) .timeline-status {
+    background: var(--mainColor);
+    border: 4px solid var(--secondVariantColor);
+}
+
+.timeline-content {
+    margin-left: 15px;
+}
+
+.timeline-content span
+{
+    color: var(--thirdVariantColor);
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.timeline-content h3 {
+    color: #cf2e2e;
+    margin-bottom: 10px;
+}
