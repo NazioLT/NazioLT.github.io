@@ -132,6 +132,11 @@ body {
     align-items: center;
 }
 
+.skills-object:not(.leftBar)
+{
+    border-left: none;
+}
+
 .skills-object i {
     font-size: 96px;
     font-style: normal;
