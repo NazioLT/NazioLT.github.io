@@ -26,12 +26,39 @@ body {
     color: var(--thirdVariantColor);
 }
 
+.projects img
+{
+    /* display: flex; */
+    width: 300px;
+    height: 300px;
+}
+
 .projects
 {
-    justify-items: center;
+    background-color: #cf2e2e;
 }
 
 .projects-parts {
-    width: 1050px;
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
     background-color: blue;
+}
+/* .projects-part {
+    display: flex;
+    flex-direction: column;
+    background-color: cyan;
+} */
+
+.projects-objects {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.projects-object {
+    background-color: #cf2e2e;
 }

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: MAINFONT;
+    src: url("Fonts/RobotoMono-Regular.ttf");
+}
+
+:root {
+    --mainColor: #f3efe1;
+    --mainVariantColor: #e4dfcb;
+    --secondColor: #dd6060;
+    --secondVariantColor: #cf2e2e;
+    --thirdColor: rgb(56, 56, 56);
+    --thirdVariantColor: rgb(27, 27, 27);
+}
+
+body {
+    background-color: green;
+}
+
+.projects h1,
+.projects h2,
+.projects h3 {
+    color: var(--thirdVariantColor);
+}
+
+.projects
+{
+    width: 1050px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.projects-parts
+{
+    background-color: #cf2e2e;
+    align-items: center;
+}
+
+.projects-object img
+{
+    width: 250px;
+    height: 250px;
+}
+
+.projects-object
+{
+    background-color: var(--mainColor);
+    display: flex;
+}
