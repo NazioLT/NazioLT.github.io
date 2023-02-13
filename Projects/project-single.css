@@ -1,0 +1,60 @@
+@font-face {
+    font-family: MAINFONT;
+    src: url("Fonts/RobotoMono-Regular.ttf");
+}
+
+:root {
+    --mainColor: #f3efe1;
+    --mainVariantColor: #e4dfcb;
+    --secondColor: #dd6060;
+    --secondVariantColor: #cf2e2e;
+    --thirdColor: rgb(56, 56, 56);
+    --thirdVariantColor: rgb(27, 27, 27);
+}
+
+.hero {
+    height: 50vh;
+    background-image: none;
+}
+
+.hero nav {
+    z-index: 1;
+    position: relative;
+}
+
+.hero .hero-image {
+    filter: saturate(50%) brightness(75%);
+
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    max-height: 50vh;
+    background-size: cover;
+    background-image: url("2023/IMG/TEST.png");
+    background-position: center;
+}
+
+.hero .content {
+    /* Vrmt centrer au milieu de l'ecran, 25 pour moitié de la moitié de l'ecran */
+    top: 25%;
+    transform: translateY(-25%);
+}
+
+.hero .content nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.hero .content nav h3 {
+    margin: 15px;
+    margin-left: 0;
+}
+
+article {
+    min-height: 50vh;
+}
