@@ -22,58 +22,56 @@ body {
     padding: 100px 0px;
 }
 
-.Projects h1, h3
-{
+.Projects h1,
+h3 {
     text-align: center;
 }
 
-.Projects h1,h2,h3{
+.Projects h1,
+h2,
+h3 {
     color: var(--thirdVariantColor);
 }
 
-.Projects h1
-{
+.Projects h1 {
     margin-bottom: 42px;
     padding: 0px;
     margin-top: 0px;
 }
 
-.Projects h2
-{
+.Projects h2 {
     font-size: 42px;
     margin: 42px;
 }
 
-.Projects h3{
+.Projects h3 {
     font-size: 32px;
     padding: 0;
     margin-bottom: 16px;
 }
 
 
-.Projects h4{
+.Projects h4 {
     font-size: 18px;
     padding: 0;
     margin-bottom: 8px;
 }
 
 .Project-Categories {
-    display:grid;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
-.Project-Items
-{
-    display:grid;
+.Project-Items {
+    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     align-items: stretch;
     justify-content: space-between;
 }
 
-.Project-Item
-{
+.Project-Item {
     background-color: var(--mainColor);
     height: 600px;
     width: 500px;
@@ -82,16 +80,13 @@ body {
     margin: 15px;
     display: flex;
     flex-direction: column;
-
 }
 
-.Project-Item span
-{
+.Project-Item span {
     text-align: center;
 }
 
-.Project-Item img
-{
+.Project-Item img {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -99,8 +94,7 @@ body {
     height: auto;
 }
 
-.Project-Item a
-{
+.Project-Item a {
     margin-top: 24px;
     color: var(--secondVariantColor);
     text-align: center;
@@ -108,19 +102,17 @@ body {
     font-size: 18px;
     text-decoration: none;
 
-    border: 2px solid  var(--secondVariantColor);
+    border: 2px solid var(--secondVariantColor);
     border-radius: 8px;
     transition: 0.4s;
 }
 
-.Project-Item a:hover
-{
+.Project-Item a:hover {
     background-color: var(--secondVariantColor);
     color: var(--mainColor);
     transition: 0.4s;
 }
 
-.Project-Item p
-{
+.Project-Item p {
     text-align: justify;
 }
