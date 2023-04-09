@@ -47,7 +47,7 @@ body {
     height: 100px;
     background-color: var(--secondVariantColor);
     left: 23px;
-    top: 50%;
+    bottom: 40%;
     transform: translateX(-50%);
 }
 
@@ -116,6 +116,7 @@ body {
 }
 
 .skills-objects {
+    width: 900px;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: auto;

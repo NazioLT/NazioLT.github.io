@@ -1,0 +1,21 @@
+CRAP CIRCLZ
+
+Project Type : Ludum Dare 52 / Game Jam
+Software used : Unity Engine 2022
+Language used : C#
+Primary Role : Gameplay programming
+
+
+DESCRIPTION DU PROJET : 
+
+bla bla bla
+
+Screen du jeu
+
+
+THE TEAM : 
+
+l'equipe est .....
+
+Mon rôle : 
+
