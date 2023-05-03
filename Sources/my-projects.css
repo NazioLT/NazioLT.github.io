@@ -41,7 +41,7 @@ h3 {
 
 .Projects h2 {
     font-size: 42px;
-    margin: 42px;
+    margin: 42px 0px;
 }
 
 .Projects h3 {
@@ -73,11 +73,11 @@ h3 {
 
 .Project-Item {
     background-color: var(--mainColor);
-    height: 600px;
-    width: 500px;
+    height: 700px;
+    width: 600px;
+    margin: 12px;
     padding: 20px 35px;
     border-radius: 20px;
-    margin: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -115,5 +115,39 @@ h3 {
 
 .Project-Item p {
     text-align: justify;
-    height: 100px;
+    height: 120px;
+}
+
+.Project-Items.Little
+{
+    grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
+.Project-Item.Little {
+    height: 250px;
+    width: 400px;
+
+    text-decoration: none;
+}
+
+.Project-Item.Little:hover {
+    border: 2px solid var(--secondVariantColor);
+}
+
+.Project-Item.Little img {
+    height: 192px;
+    width: 332px;
+    position: absolute;
+    z-index: 1;
+}
+
+.Project-Item.Little h3 {
+    color: var(--mainColor);
+    z-index: 2;
+    margin: 56px 0px;
+}
+
+.Project-Item.Little .tags.Little {
+    z-index: 2;
+    margin: 12px;
 }
