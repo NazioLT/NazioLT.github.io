@@ -145,6 +145,7 @@ h3 {
     color: var(--mainColor);
     z-index: 2;
     margin: 56px 0px;
+    text-shadow: 2px 2px 3px #272727;
 }
 
 .Project-Item.Little .tags.Little {

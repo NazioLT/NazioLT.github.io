@@ -44,6 +44,7 @@ body {
     background-size: cover;
     /* background-image: url("2023/IMG/TEST.png"); */
     background-position: center;
+    filter: blur(5px);
 }
 
 .hero .content {
@@ -54,6 +55,11 @@ body {
     left: auto;
     text-align: center;
     position: relative;
+}
+
+.hero h1
+{
+    text-shadow: 2px 2px 3px #272727;
 }
 
 article h5 {
