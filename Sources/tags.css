@@ -1,0 +1,26 @@
+:root {
+    --mainColor: #f3efe1;
+    --mainVariantColor: #e4dfcb;
+    --secondColor: #dd6060;
+    --secondVariantColor: #cf2e2e;
+    --thirdColor: rgb(56, 56, 56);
+    --thirdVariantColor: rgb(27, 27, 27);
+}
+
+.tags {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.tag {
+    margin-right: 12px;
+    border-radius: 6px;
+
+    background-color: var(--secondVariantColor);
+    color: var(--mainColor);
+}
+
+.tag p {
+    height: auto;
+    padding: 0 6px;
+}

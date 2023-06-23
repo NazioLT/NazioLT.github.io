@@ -1,0 +1,24 @@
+CRAP CIRCLZ
+
+Project Type : Ludum Dare 52 / Game Jam
+Software used : Unity Engine 2022
+Language used : C#
+Primary Role : Gameplay programming
+
+
+DESCRIPTION DU PROJET : 
+
+bla bla bla
+
+Screen du jeu
+
+
+THE TEAM : 
+
+l'equipe est .....
+
+Mon rôle : 
+
+Mon rôle dans Deus Arena a été multiple. J'ai principalement travaillé en tant que lead programmer, nottament en planifiant l'architecture du code, en programmant
+                    une bonne partie du code et en aidant mon coéquipier. J'ai également travaillé sur l'aspect visuel du jeu, nottament sur des shaders customs. J'ai conçu le concept
+                    avec Alexis. Et enfin j'ai planifié la production en utilisant principalement la methode agile.

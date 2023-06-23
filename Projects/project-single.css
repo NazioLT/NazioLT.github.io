@@ -44,6 +44,7 @@ body {
     background-size: cover;
     /* background-image: url("2023/IMG/TEST.png"); */
     background-position: center;
+    filter: blur(5px);
 }
 
 .hero .content {
@@ -54,6 +55,11 @@ body {
     left: auto;
     text-align: center;
     position: relative;
+}
+
+.hero h1
+{
+    text-shadow: 2px 2px 3px #272727;
 }
 
 article h5 {
@@ -116,6 +122,7 @@ article h2 {
     vertical-align: text-top;
     border: 0;
 }
+
 .teammate-profil .name h5 {
     font-size: medium;
     text-align: center;
@@ -133,16 +140,14 @@ article h2 {
     margin-top: 12px;
 }
 
-.Article-Links li
-{
+.Article-Links li {
     text-decoration: none;
     display: grid;
     grid-template-columns: 100%;
     margin-top: 72px;
 }
 
-.Article-Links li a
-{
+.Article-Links li a {
     color: var(--secondVariantColor);
     text-decoration: none;
     text-align: center;
@@ -154,8 +159,17 @@ article h2 {
     transition: 0.4s;
 }
 
-.Article-Links li a:hover
-{
+.Article-Links li a:hover {
     background-color: var(--secondVariantColor);
     color: var(--mainVariantColor);
+}
+
+.Article-Part p {
+    text-align: justify;
+}
+
+iframe {
+    margin-top: 24px;
+    width: 1280px;
+    height: 720px;
 }
