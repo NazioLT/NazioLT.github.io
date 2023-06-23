@@ -62,6 +62,16 @@ body {
     text-shadow: 2px 2px 3px #272727;
 }
 
+<<<<<<< Updated upstream
+=======
+article h3 {
+    font-size: x-large;
+    margin: 16px;
+    margin-left: 0;
+    color: var(--thirdVariantColor);
+}
+
+>>>>>>> Stashed changes
 article h5 {
     font-size: medium;
     margin: 16px;
